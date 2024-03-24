@@ -1,0 +1,51 @@
+# Doxygen configuration file
+
+# Project name
+PROJECT_NAME           = "State Pattern"
+
+# Output directory for generated documentation
+OUTPUT_DIRECTORY       = Doc
+
+# Directory where source code files are located
+INPUT                  = .
+
+# File extensions to process
+FILE_PATTERNS          = *.c *.cpp *.h *.hpp
+
+# Ignore directories and files
+EXCLUDE                = build
+
+# Use recursive mode to search for files
+RECURSIVE              = YES
+
+# Generate an index
+GENERATE_HTML          = YES
+
+# Configuration for index page
+MARKDOWN_SUPPORT       = YES
+USE_MDFILE_AS_MAINPAGE = main.md
+
+# Generate a dependency diagram
+GENERATE_DEPENDENCIES  = YES
+
+# Use an image in the documentation
+IMAGE_PATH             = .
+
+# Name of the image to use
+DOT_IMAGE_FORMAT       = jpg
+
+# Maximum number of nodes in the graph
+DOT_GRAPH_MAX_NODES    = 100
+
+# Output format for generated graphics
+HAVE_DOT               = YES
+
+# Specific configuration to generate dependency graph
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+
+# Location of the image to be used in the documentation
+DOT_IMAGE_FORMAT       = jpg
+
+# Generate the dependency diagram only for the specified files
+DEPENDENCY_FILE        = Doc/diagram.jpg
